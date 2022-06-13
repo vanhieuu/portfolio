@@ -30,7 +30,7 @@ const Logo = () => {
             color={useColorModeValue('grey.800', 'whiteAlpha.900')}
             fontFamily="M PLUS Rounded 1c"
             fontWeight={'bold'}
-            ml="3"
+            ml="4"
           >
             Thân Văn Hiếu
           </Text>

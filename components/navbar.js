@@ -15,7 +15,7 @@ import {
   useColorModeValue
 } from '@chakra-ui/react'
 import { HamburgerIcon } from '@chakra-ui/icons'
-
+import ThemeToggleButton from './theme-toogle-button'
 const LinkItem = ({ href, path, children }) => {
   const active = path === href
   const inactiveColor = useColorModeValue('grey200', 'whiteAlpha.900')
@@ -66,13 +66,17 @@ const Navbar = props => {
           mt={{ base: 4, nmd: 0 }}
         >
           <LinkItem href="/works" path={path}>
-            Works
+            Công việc
           </LinkItem>
           <LinkItem href="/posts" path={path}>
-            Posts
+            Sản phẩm
+          </LinkItem>
+          <LinkItem href="https://github.com/vanhieuu/portfolio" path={path}>
+           Source Code
           </LinkItem>
         </Stack>
         <Box flex={1} align="right">
+            <ThemeToggleButton/>
           <Box ml={2} display={{ base: 'inline-block', md: 'none' }}>
             <Menu>
               <MenuButton
@@ -83,13 +87,16 @@ const Navbar = props => {
               />
               <MenuList>
                 <NextLink href="/" passHref>
-                  <MenuItem as={Link}> About</MenuItem>
+                  <MenuItem as={Link}>Giới thiệu</MenuItem>
                 </NextLink>
                 <NextLink href="/works" passHref>
-                  <MenuItem as={Link}>Works</MenuItem>
+                  <MenuItem as={Link}>Công việc</MenuItem>
                 </NextLink>
                 <NextLink href="/posts" passHref>
-                  <MenuItem as={Link}>Posts</MenuItem>
+                  <MenuItem as={Link}>Sản phẩm</MenuItem>
+                </NextLink>
+                <NextLink href="https://github.com/vanhieuu/portfolio">
+                <MenuItem as={Link}>Source Code</MenuItem>
                 </NextLink>
               </MenuList>
             </Menu>
