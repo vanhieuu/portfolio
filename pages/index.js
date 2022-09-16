@@ -59,7 +59,7 @@ const Page = () => {
         </Heading>
         <Paragraph>
           Hiện tại mình đang là lập trình viên front-end cho mảng ứng dụng điện
-          thoại di động của công ty cổ phần giáo dục CoEdu. Ngôn ngữ lập trình
+          thoại di động của hệ thống giáo dục HOCMAI. Ngôn ngữ lập trình
           mà mình đang dùng là React Native và ReactJs. Ngoài việc lập trình
           mình còn có thể xem Tarot và coi như là một nghề tay trái của mình.
         </Paragraph>
@@ -85,8 +85,12 @@ const Page = () => {
           nghệ Hà Nội
         </BioSection>
         <BioSection>
-          <BioYear>2022 đến nay</BioYear>
-          Front-end Developer React Native tại Công ty cổ phần giáo dục CoeDu
+          <BioYear>12/2021 đến 06/2022</BioYear>
+          Mobile Developer tại Công ty cổ phần giáo dục COEDU
+        </BioSection>
+        <BioSection>
+          <BioYear>06/2022 đến nay</BioYear>
+          Mobile Developer tại hệ thống giáo dục HOCMAI
         </BioSection>
       </Section>
  

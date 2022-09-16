@@ -32,8 +32,8 @@ export const WorkGridItem = ({ children, id, title, thumbnail }) => {
             alt={title}
             className="grid-item-thumbnail"
             placeholder="blur"
-            width={200}
-            height={300}
+            width={'100%'}
+            height={200}
           />
           <LinkOverlay href={`/works/${id}`}>
             <Text mt={2} fontSize={20}>
@@ -46,14 +46,14 @@ export const WorkGridItem = ({ children, id, title, thumbnail }) => {
     </Box>
   )
 }
-export const GridItemStyle = () =>{
-    return (
-        <Global  styles={
-            `
+export const GridItemStyle = () => {
+  return (
+    <Global
+      styles={`
             .grid-item-thumbail{
                 border-radius:12px
             }
-            `
-        }/>
-    )
+            `}
+    />
+  )
 }
